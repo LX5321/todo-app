@@ -9,7 +9,6 @@
          "description": "Todo description",
          "completed": false
        },
-       ...
      ]
      ```
 
