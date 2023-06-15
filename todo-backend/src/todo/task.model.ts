@@ -1,5 +1,12 @@
+import { IsBoolean, IsInt, IsString } from "class-validator";
+
 export class TaskModel {
-    id: number;
-    description: String;
-    completed: Boolean;
+    @IsInt()
+    id: number = 1;
+
+    @IsString()
+    description: String = "test";
+
+    @IsBoolean()
+    completed: Boolean = false;
 }
